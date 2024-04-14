@@ -1,0 +1,107 @@
+/* login.css */
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Login container */
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login form */
+.login__form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Login title */
+.login__title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Login content */
+.login__content {
+    margin-bottom: 20px;
+}
+
+/* Login box */
+.login__box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Login input */
+.login__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Login label */
+.login__label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #999;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+/* Login input focus */
+.login__input:focus + .login__label,
+.login__input:valid + .login__label {
+    top: 5px;
+    font-size: 12px;
+    color: #007bff;
+}
+
+/* Login button */
+.login__button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login__button:hover {
+    background-color: #0056b3;
+}
+
+/* Login register */
+.login__register {
+    text-align: center;
+}
+
+.login__register a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login__register a:hover {
+    text-decoration: underline;
+}
